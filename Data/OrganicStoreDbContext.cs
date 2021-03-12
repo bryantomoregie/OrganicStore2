@@ -12,5 +12,11 @@ using OrganicStore2.Models;
         {
         }
 
-        public DbSet<OrganicStore2.Models.CartProduct> CartProduct { get; set; }
+        public DbSet<CartProduct> CartProduct { get; set; }
+
+        public DbSet<Cart> Cart { get; set; }
+
+        public DbSet<Product> Product { get; set; }
+
+        public DbSet<User> User { get; set; }
     }

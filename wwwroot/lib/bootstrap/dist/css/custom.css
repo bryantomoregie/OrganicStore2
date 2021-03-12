@@ -1,0 +1,13 @@
+﻿/* Works, I think, because the .navbar-brand spit has these attributes, and I am overriding them here*/
+/*.navbar-brand {
+    font-size: xx-small;
+    padding-top: 100px;
+}*/
+
+.bg-color {
+    background-color: #00674b;
+}
+
+.navbar-light .navbar-brand {
+    color: white;
+}
