@@ -1,8 +1,43 @@
 ﻿/* Works, I think, because the .navbar-brand spit has these attributes, and I am overriding them here*/
-/*.navbar-brand {
-    font-size: xx-small;
-    padding-top: 100px;
-}*/
+
+/* A custom class added to the nav div to make the background color green*/
+.navibar {
+    background-color: #00674b;
+}
+
+/* A bootstrap class with the color attribute already there. I updated it, and now the text is white before hover.*/
+.navbar-light .navbar-brand {
+    color: white;
+}
+
+/*the original bootstrap did NOT have the text-decoration attribute, but adding it is working.*/
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+    color: white;
+    text-decoration: underline;
+}
+
+.nav-link:hover, .nav-link:focus {
+    text-decoration: underline;
+    color: white;
+}
+
+/* to override the original color I added !important*/
+a.text-light:hover, a.text-light:focus {
+    text-decoration: underline;
+    color: white !important;
+}
+
+
+.navibar-link {
+    color: white;
+}
+
+/* This is my previous edits*/
+
+/*.navbar-brand:hover, .navbar-brand:focus {
+    text-decoration: underline;
+    color: white;
+}
 
 .bg-color {
     background-color: #00674b;
@@ -11,3 +46,12 @@
 .navbar-light .navbar-brand {
     color: white;
 }
+
+.navi-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.navi-link:hover {
+    text-decoration: underline;
+}*/
