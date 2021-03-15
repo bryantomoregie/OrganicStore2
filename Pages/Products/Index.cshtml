@@ -5,13 +5,95 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div class="products-container">
+    <p class="extra-nav"> <a asp-page="/Index"> Home </a> / Products </p>
+    <div class="item searchbar-products">
+        <select name="products-dropdown" id="products-dropdown">
+            <option value="All Categories">Home</option>
+            <option value="All Categories">All Products</option>
+            <option value="Crispy">Crispy</option>
+            <option value="Emaculate">Emaculate</option>
+        </select>
+    </div>
+    <div class="item main">
+        <div class="category-card produce">
+            <img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/products_landing/aisles/img-aisle-produce@2x._TTD_._SR350,350_.jpg" alt="">
+            <p class="category-title">Produce</p>
+        </div>
+         <div class="category-card dairy">
+            <img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/products_landing/aisles/img-aisle-dairy@2x._TTD_._SR350,350_.jpg" alt="">
+            <p class="category-title">Dairy & Eggs</p>
+        </div>
+         <div class="category-card meat">
+            <img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/products_landing/aisles/img-aisle-meat@2x._TTD_._SR350,350_.jpg" alt="">
+            <p class="category-title">Meat</p>
+        </div>
+         <div class="category-card prepared">
+            <img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/products_landing/aisles/img-aisle-prepfoods@2x._TTD_._SR350,350_.jpg" alt="">
+            <p class="category-title">Prepared Foods</p>
+        </div>   
+            <div class="category-card pantry">
+            <img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/products_landing/aisles/img-aisle-pantry@2x._TTD_._SR350,350_.jpg" alt="">
+            <p class="category-title">Pantry Essentials</p>
+        </div>
+         <div class="category-card bread">
+            <img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/products_landing/aisles/img-aisle-bakery@2x._TTD_._SR350,350_.jpg" alt="">
+            <p class="category-title">Bread, Rolls & Bakery</p>
+        </div> 
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@* <h1>Index</h1>
 
 <p>
     <a asp-page="Create">Create New</a>
 </p>
 <table class="table">
     <thead>
+        
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Product[0].Name)
@@ -45,4 +127,4 @@
         </tr>
 }
     </tbody>
-</table>
+</table> *@

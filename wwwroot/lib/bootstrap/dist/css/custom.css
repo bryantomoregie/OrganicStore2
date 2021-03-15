@@ -32,6 +32,16 @@ a.text-light:hover, a.text-light:focus {
     color: white;
 }
 
+.navbar-nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
 /* This is my previous edits*/
 
 /*.navbar-brand:hover, .navbar-brand:focus {
