@@ -18,11 +18,11 @@ namespace OrganicStore2.Pages.Category
             _context = context;
         }
 
-        public IList<Product> Products { get;set; }
+        public IList<Product> Product { get;set; }
 
         public async Task OnGetAsync()
         {
-            Products = await _context.Product
+            Product = await _context.Product
                 .Where(x => x.Type == "Produce")
                 .ToListAsync();
         }

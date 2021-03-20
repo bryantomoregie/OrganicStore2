@@ -60,6 +60,14 @@ namespace OrganicStore2.Models
                         Type = "Produce",
                         Description = "Avocado, a sodium free food",
                         ProductImage = "https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/575f2594d59d0103e5ac59c2_produce_ogavocados.1._TTD_._SR300,300_.jpg"
+                    },
+                       new Product
+                    {
+                        Id = 4,
+                        Name = "Organic Pasture-raised Eggs, 12 eggs",
+                        Type = "Produce",
+                        Description = "Pasture Raised",
+                        ProductImage = "https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/5f41b1cc5639966d5b72c285_00861745000027-glamor-frontpackageglamor-2020-08-05t17-43-25-iphone-x-quality-90-1-21-1-user-5984ad42a967f880524de2c4-sgpv-785744._TTD_._SR300,300_.jpg"
                     }
 
                 );

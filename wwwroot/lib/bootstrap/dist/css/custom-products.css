@@ -60,6 +60,14 @@ select{
     max-height: 100%;
 }
 
+body > .category-title{
+    text-align: center !important;
+}
+
+.category-card{
+    text-align: center !important;
+}
+
 
 
 
