@@ -23,7 +23,7 @@ namespace OrganicStore2.Pages.Category
         public async Task OnGetAsync()
         {
             Product = await _context.Product
-                .Where(x => x.Type == "Produce")
+                .Where(x => x.Type == "Meat")
                 .ToListAsync();
         }
     }
