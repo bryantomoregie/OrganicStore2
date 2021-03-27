@@ -1,31 +1,23 @@
 @page
 @model OrganicStore2.Pages.Products.IndexModel
 
-@{
+@* @{
     ViewData["Title"] = "Index";
-}
+} *@
 
-@* <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a>  *@
 
  <div class="products-container">
-    <p class="extra-nav">
-         <a asp-page="/Index">
-          Home 
-        </a> 
-          / Products 
-    </p>
+    <p class="extra-nav"><a asp-page="/Index">Home </a> / Products </p>
     <form class="item searchbar-products">
-        <select name="products-dropdown" id="products-dropdown">          
-            <option value="All Categories">
-                Home
-            </option>
-            <option value="All Categories">All Products</option>
-            <option value="Produce">Produce</option>
-            <option value="Dairy & Eggs">Dairy & Eggs</option>
-            <option value="Bread, Rolls & Bakery">Bread, Rolls & Bakery</option> 
+        <select name="products-dropdown" id="products-dropdown" >          
+            <option value="All Categories">Home</option>
+            <option name="All Categories" value="All Categories">All Products</option>
+            <option name="Produce" value="Produce">Produce</option>
+            <option name="Dairy & Eggs" value="Dairy & Eggs">Dairy & Eggs</option>
+            <option name="Bread, Rolls & Bakery" value="Bread, Rolls & Bakery">Bread, Rolls & Bakery</option> 
         </select>
-        <input type="submit" value="Submit">
     </form>
+ 
     <div class="item main">
         <div class="category-card produce">
             <img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/products_landing/aisles/img-aisle-produce@2x._TTD_._SR350,350_.jpg" alt="">
@@ -53,7 +45,9 @@
         </div> 
     </div>
 </div> 
-
+ @section Scripts{<script>
+    document.getElementById("products-dropdown").addEventListener("input", (e)=> {window.location = `/Category`})
+</script>} 
 
 
 

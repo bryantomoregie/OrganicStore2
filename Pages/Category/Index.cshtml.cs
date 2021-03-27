@@ -20,10 +20,10 @@ namespace OrganicStore2.Pages.Category
 
         public IList<Product> Product { get;set; }
 
-        public async Task OnGetAsync()
+        public async Task OnGetAsync(string category )
         {
             Product = await _context.Product
-                .Where(x => x.Type == "Meat")
+                .Where(x => x.Type == category)
                 .ToListAsync();
         }
     }
